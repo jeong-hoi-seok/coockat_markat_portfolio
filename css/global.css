@@ -1,0 +1,375 @@
+html body{
+    margin: 0 auto;
+    /* padding-top: 10px; */
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('../font/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('../font/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('../font/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('../font/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('../font/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('../font/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+*{
+    font-family: 'Spoqa Han Sans', 'sans-serif';
+}
+/* font size */
+
+header .flex-content,
+header h1,
+.timedeal-Area,
+.welcome2500-Area ul,
+.barobaro-Area,
+.noodle-Area .button2section-slide,
+.tvcf-Area,
+.food-Area,
+.buyPage-Area,
+.otherfood-Area,
+.eventBanner-Area,
+.detail-food-Area,
+.purchase-info-Area,
+.review-Area,
+.Question-Area{
+    max-width: 1060px;
+    margin: 0 auto;  
+}
+/* 페이지 기본 width css */
+
+.login-title,
+.member-login,
+.login-content,
+.sign-up{
+    margin: 0 auto;
+    max-width: 740px;
+}
+/* 로그인,회원가입 width css */
+
+.timedeal-Area,
+.welcome2500-Area,
+.barobaro-Area,
+.noodle-Area,
+.tvcf-Area{
+    padding: 75px 0 80px 0;
+}
+a.top-button{
+    width: 60px;
+    height: 60px;
+    background-color: #EB5500; opacity: 0.8;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 1000;
+    display: inline-block;
+    position: fixed; bottom: 2%; right: 1%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: backgruond-color, opacity, visibility;
+}
+a.top-button .material-icons{
+    font-size: 60px;
+    color: #fff;
+}
+a.active-top-button{
+    opacity: 0.8;
+    visibility: visible;
+}
+/* 최상단 버튼 css */
+section > h2{
+    font-size: 24px; font-weight: 700; text-align: center;
+    color: #333;
+}
+section > h2 > small{
+    font-size: 14px; font-weight: 400; margin: 20px 0 35px; display: block;
+    color: #333;
+}
+.sale-value{
+    font-size: 24px; font-weight: 400; color: #EB5500; background-color: transparent;
+    margin-right: 5px;
+}
+.sale-value::after{
+    content: '%';
+}
+.final-value > strong{
+    font-size: 24px; font-weight: 400; color: #333; 
+}
+.final-value > strong::after,
+.original-value::after{
+    content: '원';
+}
+.original-value{
+    font-size: 16px; font-weight: 400; color: rgba(51, 51, 51, 0.4);
+    display: block; margin-top: 10px; display: flex;
+}
+.glo-section{
+    display: flex;
+}
+.glo-section li{
+    list-style: none;
+}
+.glo-section li figure figcaption{
+    margin-top: 10px; text-align: left;
+}
+.glo-section li figure figcaption a h3,
+.tvcf-Area > div > figure > figcaption a h3{
+    margin-bottom: 5px; font-size: 16px; font-weight: 400;
+}
+.glo-section figure figcaption a p,
+.tvcf-Area > div > figure > figcaption a p{
+    margin-bottom: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-size: 16px; font-weight: 400;
+}
+.pagediv{
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 150px;
+}
+.pagediv a{
+    width: 35px; height: 35px; border: 1px solid #dcdcdc; display: flex;
+    justify-content: center; align-items: center; font-size: 12px; color: #333;
+}
+.pagediv a:focus{
+    background-color: #eee;
+}
+.pagediv a:first-of-type::after{
+    content: '<'; color: black;
+}
+.pagediv a:last-of-type::after{
+    content: '>';
+}
+
+/* global */
+header .main-info{
+    background-color: #EB5500; width: 100%; text-align: center; padding: 15px 0;
+}
+header .main-info > span{
+    color: #eee;
+}
+header .flex-content{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px; margin-top: 10px;
+}
+header .flex-content .top-snsBar a {
+    display: inline-block;
+    width: 25px;
+}
+header .flex-content .top-snsBar a:not(:last-of-type){
+    margin-right: 26px;
+}
+header .flex-content .top-snsBar a img{
+    width: 100%;
+}
+header .flex-content ul{
+    display: flex;
+    list-style: none;
+}
+header .flex-content ul li{
+    font-size: 12px;
+}
+header .flex-content ul .service-center > span::after{
+    content: '▼'; margin-left: 5px;
+}
+header .flex-content ul > li > a:hover,
+header .flex-content ul > .service-center span:hover,
+header .flex-content ul > .service-center .service-center-slide li:hover a{
+    color: #EB5500;
+    font-weight: 700; border-bottom: 1px solid #EB5500;
+}
+header .flex-content > ul > li:not(:last-of-type){
+    margin-right: 33px;
+}
+header .flex-content ul .service-center{
+    cursor: pointer;
+}
+header .flex-content ul .service-center{
+    position: relative;
+}
+header .flex-content ul .service-center .service-center-slide{
+    position: absolute; left: 0; top: 24px;
+    list-style: none; border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    width: max-content;
+}
+header .flex-content ul .service-center .service-center-slide li:not(:last-of-type){
+    margin-bottom: 12px; 
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+header h1 a img{
+    width: 100%;
+}
+
+
+header nav{
+    position: relative; 
+    z-index: 1000; background-color: #fff; width: 100%;
+    display: flex; justify-content: center; align-items: center;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+}
+header nav.fixedtop{
+    position: fixed; z-index: 1000; background-color: #fff;
+    top: 0; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);    
+}
+header nav > ul{
+    display: flex;
+}
+header > nav > ul > .top-menu{
+    padding: 25px 50px;
+}
+
+header > nav > ul > .bar{
+    background: url("../images/nav-bar.gif") no-repeat 100%;
+}
+header > nav > ul > .all_category{
+    padding: 25px 49px 20px 20px; position: relative; cursor: pointer;
+}
+header > nav > ul > .serch-menu{
+    padding: 11px 15px 11px 0;
+}
+header > nav > ul > .serch-menu form{
+    position: relative;
+}
+header > nav > ul > .serch-menu form input[id="commodity-search"]{
+    width: 258px; height: 42px; padding: 0 50px 0 20px;
+    border-radius: 20px; border: 1px solid #f7f7f7; background-color: #f7f7f7;
+}
+header > nav > ul > .serch-menu form input[id="commodity-search"]:focus{
+    background-color: #fff; outline: none; border: 1px solid #f7f7f7;
+}
+header > nav > ul > .serch-menu form .btn-search{
+    position: absolute; top: 10px; right: 20px;
+    width: 25px;
+}
+header > nav .gnb > li:last-of-type{
+    padding: 17px 0;
+    position: relative;
+}
+header > nav .gnb > li:not(:last-of-type):hover > a{
+    color: #EB5500; font-weight: 700;
+    border-bottom: 1px solid #EB5500;
+}
+header nav ul li:last-of-type a img{
+    width: 30px;
+}
+
+header nav .gnb-sub{
+    position: absolute; top: 66px; left: 0; z-index: 100;
+    background-color: #fff;
+    border: 1px solid #f7f7f7; display: block;
+}
+header nav .gnb-sub > li{
+    list-style: none; padding: 18px 0  18px 20px; width: 190px; font-size: 14px;
+}
+header nav .gnb-sub li .sub-menu{
+    position: absolute; top: -1px; left: 211px; background-color: #f7f7f7;
+    width: 140px; height: 100%; border: 1px solid #f7f7f7;
+}
+header nav .gnb-sub li .sub-menu > li{
+    padding: 18px 0  18px 20px; font-size: 12px;
+}
+header nav .gnb-sub li:hover{
+    background-color: #f7f7f7;
+}
+header nav .gnb-sub li .sub-menu > li:hover{
+    background-color: #fff;
+}
+header nav .gnb-sub > li > img{
+    width: 25px; vertical-align: middle; margin-right: 15px;
+}
+
+header nav ul .all_category > a::before{
+    content: url("../images/list-black.gif");
+    margin-right: 10px;
+}
+header nav ul .all_category:hover > a::before{
+    content: url("../images/list-orange.gif");
+}
+header > nav > ul > li:last-of-type .cart-count{
+    width: 15px; height: 15px; background-color: #EB5500; color: #fff;
+    border: 1px solid #fff; border-radius: 8px;
+    display: block; position: absolute; top: 15px; right: -5px;
+    font-size: 10px; text-align: center; line-height: 14px;
+}
+
+footer .address-foot{
+    border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7;
+}
+footer .address-foot > ul{
+    width: 1060px; margin: 0 auto; display: flex; padding: 60px 0; justify-content: center;
+}
+footer .address-foot > ul > li{
+    list-style: none; padding: 0 50px; border-left: 1px solid #e7e7e7;
+}
+footer .address-foot > ul > li:last-of-type{
+    border-right: 1px solid #e7e7e7;
+}
+footer .address-foot > ul > li > h3{
+    font-size: 14px; font-weight: 400; margin-bottom: 30px; color: #353535;
+}
+footer .address-foot > ul > li > address{
+    font-size: 12px; color: #353535; line-height: 26px;
+}
+footer .address-foot > ul > li > address > span{
+    display: block; font-size: 16px; margin-bottom: 10px;
+}
+footer .cookat-info{
+    padding: 30px 0; width: 1060px; margin: 0 auto; display: flex; justify-content: center;
+}
+footer .cookat-info .info-h{
+    border-right: 1px solid #e7e7e7; padding: 10px 0; padding-right: 20px;
+}
+footer .cookat-info .info-h > h2,
+footer .cookat-info .info-h > span{
+    color: #555; font-size: 15px; font-weight: 700;
+}
+footer .cookat-info .info-right{
+    margin-left: 20px;
+}
+footer .cookat-info .info-right > a {
+    color: #EB5500; border-bottom: 1px solid #EB5500; font-size: 10px; font-weight: 400;
+}
+footer .cookat-info .info-right > span{
+    color: #999; font-size: 11px; margin-right: 15px;
+}
+footer .last-foot{
+    border-top: 1px solid #e7e7e7;
+}
+footer .last-foot > ul{
+    width: 1060px; display: flex; justify-content: center; margin: 0 auto;
+    padding: 50px 0; align-items: center;
+}
+footer .last-foot > ul > li{
+    list-style: none; padding: 0 15px; background: url('../images/nav-bar.gif') no-repeat right center;
+    line-height: 20px;
+}
+/* footer .last-foot > ul > li:not(:last-of-type){
+    margin-right: 20px;
+} */
+footer .last-foot > ul > li > a,
+footer .last-foot > ul > li{
+    font-size: 11px; font-weight: 400; color: #999;
+}
+footer .last-foot > ul > li > img{
+    width: 20px; vertical-align: text-bottom; margin-right: 5px;
+}
+footer .last-foot > ul .sns-icon{
+    padding: 0 20px;
+}
+footer .last-foot > ul .sns-icon > a:not(:last-of-type){
+    margin-right: 10px;
+}
+footer .last-foot > ul .sns-icon > a > img{
+    width: 15px;
+}
