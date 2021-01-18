@@ -1,0 +1,134 @@
+﻿-폰트
+SpoqaHanSans reguler(400), bold(700) (작은 글씨는 opacity 0.6이하로 조절)
+
+-폰트 line-height
+1.3 ~ 1.5 (디자인 들어가서 최종결정)
+
+-메인페이지 폰트
+최상단 폰트들 12px
+헤더 메뉴 16px
+검색창 value 12px
+타이틀 24px
+타이틀 서브 14px
+상품 타이틀 16px
+가격 16px
+할인 퍼센트 17px
+캔슬된 할인전 가격 14px
+
+그 외 14px
+
+-카테고리페이지 폰트
+페이지 정보 14px
+전체보기 및 신상품순 12px
+타이틀 20px
+가격 17px
+상품 간단설명 13px
+할인 및 이벤트mark 12px
+
+그 외 14px
+
+-구매페이지 폰트
+타이틀 24px
+타이틀 서브 14px
+가격 28px
+총상품금액 13px
+총상품가격 32px
+장바구니 담기 16px
+서브 제품 폰트 12px
+상세정보 메뉴 16px
+상세정보 11px
+문의 18px
+고객후기 12px
+
+그 외 14px
+
+-회원가입
+타이틀 30px
+전체 동의합니다 18px
+가입하기 16px
+
+그 외 14px
+
+-로그인
+타이틀 30px
+아이디 찾기 / 비밀번호 찾기 13px
+로그인 / 회원가입 16px
+
+그 외 14px
+
+-footer
+ 타이틀 13px
+이용약관 개인정보정책 전자금융거래서 13px
+
+그 외 12px
+
+
+-사이트 기획안
+
+-젊은남녀를 타겟팅, SNS에서 광고를 보고 식품사이트에서 음식을 구매하려는 소비자
+(sns에서 입소문을 탄 식품사이트임)
+
+메인 컬러 #EB5500 (주황색)
+그 외 컬러는 black 및 white에 투명도만 조절할것
+
+
+-작업영역
+max-width 1060px
+
+-메인페이지 padding and margin
+회원가입 로그인 margin 0 10px ,고객센터는 left 10px right 22px 배송지역검색 margin left 10px
+카테고리 padding 16 50 0 19px 신상품 베스트 알뜰쇼핑 이벤트 16 50 0 49px 
+검색창 value padding 0 50 0 20px
+상품Area padding 75px 80px 0
+상품 가격의 라인은 동일할것.
+
+
+메인 타이틀 padding 80 35 0px
+
+-구매페이지 padding and margin
+타이틀 서브타이틀 box padding 10 30 0px
+타이틀 margin buttom 5px
+가격 margin buttom 15px
+
+버튼  h 26px w 85px
+
+
+
+-헤더
+인스타그램 페이스북 네이버블로그 유튜브 (좌측)
+회원가입 로그인 *고객센터 [배송지역검색] (우측)
+[고객센터 list (공지사항 자주묻는 질문 1:1문의)]
+전체 카테고리 베스트 [신상품] [런칭특가] [이벤트] / [검색창] 장바구니 (global fiexd)
+
+[ ] = 페이지가 없는 메뉴
+
+-카테고리
+전체상품 신상품 베스트 간편식 디저트 [식단관리] [홈/리빙] $(slidedown)
+1개의 구매전 카테고리 페이지로 통일
+
+-메인페이지
+헤더 아랫부분 풀사이즈 슬라이드로 디자인 (swiper infinite)
+그 아래는 리뉴얼사이트와 정보 동일
+리뉴얼사이트에 있는 슬라이더가 있는 제품은 블록으로 아래로 내린다.
+메인페이지에 있는 상품 section을 클릭하면 구매페이지로 이동한다.
+
+-구매전 카테고리 페이지
+인기상품순↓↑(출시일순 인기상품순 후기많은순 낮은가격순 높은가격순)
+상품 3분할 그리드
+1개의 구매페이지로 통일
+
+-구매페이지
+(이미지, 가격)
+(배송정보)
+상품정보 구매정보 후기 QnA
+
+-참고사이트
+https://cookatmarket.com/ko/ (리뉴얼 디자인 사이트)
+http://photoshopvip.net/web/webdesign (웹디자인 참고 사이트)
+https://tailwind.ink (색상 추출검색)
+https://colors.eva.design (색상추출검색2)
+https://www-archive.mozilla.org/newlayout/testcases/css/sec526pt2.htm (폰트사이즈 테스트)
+https://material.io/design
+
+
+
