@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/cookat_mainPage.js"></script>
+</head>
+<body>
+    <a class="top-button">
+        <span class="material-icons">expand_less</span>
+    </a>
+    <header>
+        <div class="main-info">
+            <span>음식은 쿠켓마켓에서</span>
+        </div>
+        <div class="flex-content">
+            <!-- <div class="top-snsBar">
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+            </div> -->
+            <ul>
+                <li>
+                    <a href="login_before.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li class="service-center">
+                    <span>고객센터</span>
+                    <ol class="service-center-slide">
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="">회원혜택</a>
+                        </li>
+                        <li>
+                            <a href="">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="">고객센터 안내</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">배송지역검색</a>
+                </li>
+            </ul>
+        </div>
+        <!-- top_sitemap -->
+        <h1>
+            <a href="index.html"><img src="images/cookat_logo.png" alt="cookat_logo"></a>
+        </h1>
+        <!-- cookat logo -->
+        <nav>
+            <ul class="gnb">
+                <li class="all_category bar">
+                    <ul class="gnb-sub">
+                        <li>
+                            <img src="images/ic-category-with-gray-bg.svg" alt="">
+                            전체상품
+                            <ul class="sub-menu">
+                                <li><a href="sup_buy_page.html">장류/반찬</a></li>
+                                <li><a href="sup_buy_page.html">요리/안주</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-new.svg" alt="">
+                            신상품
+                        </li>
+                        <li>
+                            <img src="images/ic-best.svg" alt="">
+                            베스트
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-simple-big.svg" alt="">
+                            간편식
+                            <ul class="sub-menu">
+                                <li><a href="">TEST01</a></li>
+                                <li><a href="">간편식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-dessert.svg" alt="">
+                            디저트
+                            <ul class="sub-menu">
+                                <li><a href="">TEST02</a></li>
+                                <li><a href="">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-diet.svg" alt="">
+                            식단관리
+                            <ul class="sub-menu">
+                                <li><a href="">TEST03</a></li>
+                                <li><a href="">식단관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-homeliving-renew.svg" alt="">
+                            홈/리빙
+                            <ul class="sub-menu">
+                                <li><a href="">TEST04</a></li>
+                                <li><a href="">홈/리빙</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span class="material-icons">list</span> -->
+                    <a href="#none">카테고리</a>
+                </li>
+                <li class="top-menu bar"><a href="">베스트</a></li>
+                <li class="top-menu bar"><a href="">신상품</a></li>
+                <li class="top-menu bar"><a href="">런칭특가</a></li>
+                <li class="top-menu"><a href="">이벤트</a></li>
+                <li class="serch-menu">
+                    <form>
+                        <label for="commodity-search"></label>
+                        <input type="search" id="commodity-search" placeholder="검색어를 입력해주세요.">
+                        <input type="image" src="images/search-black-18dp.svg" class="btn-search" alt="scarch-black">
+                    </form>
+                </li>
+                <li>
+                    <a href=""><img src="images/shopping-cart.png" alt="shopping-cart"></a>
+                    <span class="cart-count"></span>
+                </li>
+            </ul>
+        </nav>
+        <!-- fixd -->
+    </header>
+
+    <section class="buyPage-Area">
+        <div class="swiper-container buypage-imgslide">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <img src="images/buypage-mainSlide01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="images/buypage-mainSlide02.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="images/buypage-mainSlide01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="images/buypage-mainSlide01.png" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="images/buypage-mainSlide01.png" alt="">
+                </li>
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination buypage-mainpag"></div>
+        </div>
+        <!-- food img -->
+        <div class="buypage-maininfo">
+            <h2>쿠캣마켓 생연어장 (간장/양념/와사비마요)</h2>
+            <span class="material-icons">share</span>
+            <div class="share-popup">
+                <span class="material-icons">clear</span>
+                <div class="sns-share">
+                    <a href="">
+                        <img src="images/twitter.png" alt="">
+                        <span>공유하기</span>
+                    </a>
+                    <a href="">
+                        <img src="images/facebook.png" alt="">
+                        <span>공유하기</span>
+                    </a>
+                </div>
+                <input type="text" id="shareurl" value="">
+                <button class="urlcopy">복사</button>
+            </div>
+             <ul class="glo-section">
+                 <li>
+                     <del class="original-value">12300</del>
+                     <mark class="sale-value">20</mark>
+                     <span  class="final-value"><strong></strong></span>
+                 </li>
+             </ul>
+             <hr>   
+            <div>
+                <dl>
+                    <dt>원산지표시</dt>
+                    <dd>상품정보고시 참조</dd>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>배송비</dt>
+                    <dd>
+                        3,500원 (50,000원 이상 무료)
+                        <small>회원은 40,000원 이상 전상품 무료배송</small>
+                        <small>(별도배송상품 제외)</small>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>배송형태</dt>
+                    <dd>냉동배송</dd>
+                </dl>
+
+                <dl>
+                    <dt>발송안내</dt>
+                    <dd>
+                        오후 12시 이전 결제건까지 당일 출고
+                        <small>(영업일 기준)</small>
+                        <strong>※ 제주도 및 도서산간지역은 배송이 불가합니다. 주문 전 확인해주세요.</strong>
+                        <strong>※ [배송준비중] 이후 상태에서는 배송지 변경 및 취소처리가 불가합니다.</strong>
+                        <strong>※ 주문 폭주 및 날씨 등 예외적인 상황의 경우 출고가 다소 지연될 수 있습니다.</strong>
+                    </dd>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>유통기한</dt>
+                    <dd>상품별 별도표기</dd>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>안내사항</dt>
+                    <dd>
+                        주말 및 공휴일이 포함되어 있거나 주문 폭주인 경우,
+                        출고일까지 1~3일 소요될 수 있습니다.
+                        <small>(영업일 기준)</small>
+                    </dd>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>필수옵션</dt>
+                    <dd class="buypage-option">
+                        <select name="option" id="option">
+                            <option value="0" disabled selected class="option-default">[필수] 옵션을 선택해주세요.</option>
+                            <option class="OPlist" value="salmon01">생연어간장 180g</option>
+                            <option class="OPlist" value="salmon02">생연어양념 180g</option>
+                            <option class="OPlist" value="salmon03">생와사마요 180g</option>
+                        </select>
+                    </dd>
+                    <dd class="buypage-option-velue">
+                        <div id="salmon01">
+                            <h3>생연어장 간장 180g</h3>
+                            <span class="material-icons">clear</span>
+                            <button type="button" class="btn_down">-</button>
+                            <input disabled type="number" value="1" name="pdnumber" id="pdnumber01">
+                            <button type="button" class="btn_up">+</button>
+                            <span class="option-value" data-option="1000">1000</span>
+                        </div>
+                        <div id="salmon02">
+                            <h3>생연어장 양념 180g</h3>
+                            <span class="material-icons">clear</span>
+                            <button type="button" class="btn_down">-</button>
+                            <input disabled type="number" value="1" name="pdnumber" id="pdnumber02">
+                            <button type="button" class="btn_up">+</button>
+                            <span class="option-value" data-option="2000">2000</span>
+                        </div>
+                        <div id="salmon03">
+                            <h3>생와사마요 180g</h3>
+                            <span class="material-icons">clear</span>
+                            <button type="button" class="btn_down">-</button>
+                            <input disabled type="number" value="1" name="pdnumber" id="pdnumber03">
+                            <button type="button" class="btn_up">+</button>
+                            <span class="option-value" data-option="3000">3000</span>
+                        </div>
+                    </dd>
+                </dl>
+                <hr>
+                <span class="buypage-final-value"><strong></strong></span>
+                <div class="submit-buybtn">
+                    <button class="cartbtn"><span>카트담기</span></button>
+                    <button type="submit"><span>구매하기</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="otherfood-Area">
+        <h2>이 상품은 어떠세요?</h2>
+        <div class="swiper-container buypage-outer-product">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">Slide 1</li>
+                <li class="swiper-slide">Slide 2</li>
+                <li class="swiper-slide">Slide 3</li>
+                <li class="swiper-slide">Slide 4</li>
+                <li class="swiper-slide">Slide 5</li>
+                <li class="swiper-slide">Slide 6</li>
+                <li class="swiper-slide">Slide 7</li>
+                <li class="swiper-slide">Slide 8</li>
+                <li class="swiper-slide">Slide 9</li>
+                <li class="swiper-slide">Slide 10</li>
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        <!-- swiper -->
+    </section>
+
+    <section class="eventBanner-Area">
+        <h2>이벤트</h2>
+        <div>
+            <a href=""><img src="images/event_buy_bg01.png" alt="event01"></a>
+            <a href=""><img src="images/event_buy_bg02.png" alt="event02"></a>
+            <a href=""><img src="images/event_buy_bg03.png" alt="event03"></a>
+        </div>
+    </section>
+
+    <section class="detail-food-Area tagetMenu" id="detail">
+        <ul class="info-nav">
+            <li>
+                <a href="#none">상품정보</a>
+            </li>
+            <li>
+                <a href="#none">구매정보</a>
+            </li>
+            <li>
+                <a href="#none">후기</a>
+            </li>
+            <li>
+                <a href="#none">QnA</a>
+            </li>
+        </ul>
+
+        <h2>
+            상세페이지
+        </h2>
+        <img src="images/detail-food-bg01.png" alt="">
+        <figure>
+            <figcaption>
+                <dl>
+                    <dt>영원한 식탁위,<br><strong>밥스틸러</strong></dt>
+                    <dd>입안에서 녹아버리는 부드러운 생연어와자꾸 손이 가는 감칠맛 나는 양념의 만남.취향에 따라 맛있게 즐겨보세요.</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-bg02.png" alt="">
+        </figure>
+        <figure>
+            <figcaption>
+                <dl>
+                    <dt>생연어장만의<br><mark>특별한 매력</mark></dt>
+                    <dd>싱싱한 노르웨이산 생연어</dd>
+                    <dd>한 입 가득 두툼한 연어</dd>
+                    <dd>취향따라 즐기는 3가지 맛</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-bg03.png" alt="">
+        </figure>
+        <h3>OPTION</h3>
+        <ul>
+            <li>
+                <span>01</span>
+                <h4>간장생연어장</h4>
+                <small>180g</small>
+                <strong>8,900</strong>
+                <img src="images/buypage-mainSlide02.png" alt="">
+            </li>
+            <li>
+                <span>01</span>
+                <h4>간장생연어장</h4>
+                <small>180g</small>
+                <strong>8,900</strong>
+                <img src="images/buypage-mainSlide02.png" alt="">
+            </li>
+            <li>
+                <span>01</span>
+                <h4>간장생연어장</h4>
+                <small>180g</small>
+                <strong>8,900</strong>
+                <img src="images/buypage-mainSlide02.png" alt="">
+            </li>
+            <li>
+                <span>01</span>
+                <h4>간장생연어장</h4>
+                <small>180g</small>
+                <strong>8,900</strong>
+                <img src="images/buypage-mainSlide02.png" alt="">
+            </li>
+        </ul>
+        <figure>
+            <figcaption>
+                <dl>
+                    <dt>진한 감칠맛<br><strong>간장 생연어장</strong></dt>
+                    <dd>싱싱한 노르웨이산 생연어가 비법간장에 풍덩! 부드럽고 두툼한 연어의 식감이 입에 착 감겨요.짜지 않고 고소한 특제 소스와 흰 쌀밥이 만나 감칠 맛이 2배!</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-option-bg01.png" alt="">
+            <img src="images/salmon.gif" alt="간장연어">
+        </figure>
+        <figure>
+            <figcaption>
+                <dl>
+                    <dt>매콤달콤한 중독성<br><strong>양념 생연어장</strong></dt>
+                    <dd>싱싱한 노르웨이산 생연어가 비법간장에 풍덩! 부드럽고 두툼한 연어의 식감이 입에 착 감겨요.짜지 않고 고소한 특제 소스와 흰 쌀밥이 만나 감칠 맛이 2배!</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-option-bg02.png" alt="">
+            <img src="images/spice_salmon.gif" alt="양념연어">
+        </figure>
+        <figure>
+            <figcaption>
+                <dl>
+                    <dt>색다른 풍미 가득<br><strong>와사마요 생연어장</strong></dt>
+                    <dd>싱싱한 노르웨이산 생연어가 비법간장에 풍덩! 짜지 않고 고소한 특제 소스와 흰 쌀밥이 만나 감칠 맛이 2배!</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-option-bg03.png" alt="">
+            <img src="images/cream_salmon.gif" alt="와사마요연어">
+        </figure>
+        <!--옵션제품-->
+        <h3>그냥 먹어도 맛있지만,<br><strong>더 맛있게 즐겨봐요!</strong></h3>
+        <figure class="coocking-gide">
+            <figcaption>
+                <dl>
+                    <dt><mark>01.</mark>생연어 덮밥</dt>
+                    <dd>따뜻한 밥에 버터와 신선한 야채, 와사비 마무리로 연어장을 넣어 완벽하게!</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-recipe-bg01.jpg" alt="">
+        </figure>
+        <figure class="coocking-gide">
+            <figcaption>
+                <dl>
+                    <dt><mark>02.</mark>생연어 쫄면</dt>
+                    <dd>따뜻한 밥에 버터와 신선한 야채, 와사비마무리로 연어장을 넣어 완벽하게!</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-recipe-bg02.png" alt="">
+        </figure>
+        <!--만드는법-->
+        <h3>생연어장은<br><strong>이렇게만들어요</strong></h3>
+        <figure class="coocking-process">
+            <figcaption>
+                <dl>
+                    <dt>날 것으로 먹는 장, 안심하고 드실 수 있게<br>청결을 최우선으로 하는<br>안전하고 깨끗한 HACCP 인증시설에서 제조합니다. </dt>
+                    <dd>체계적인 공정관리로 안전한 제품 생산</dd>
+                    <dd>신선하고 엄선된 원재료만 사용</dd>
+                    <dd>제품 변질방지로 제조시 냉장온도 유지</dd>
+                    <dd>1차 세척된 재료들을 해동 후 2차 세척</dd>
+                    <dd>HACCP 시설에서 살균처리 된 소스</dd>
+                </dl>
+            </figcaption>
+            <img src="images/detail-food-progress-bg01.jpg" alt="">
+            <img src="images/detail-food-progress-bg02.jpg" alt="">
+        </figure>
+
+        <h3>이렇게<br><strong>배송됩니다</strong></h3>
+        <img src="images/detail-food-delivery-bg01.jpg" alt="">
+
+        <div class="delivery-gide">
+            <div>
+                <img src="images/ic-orange-delivery-o.svg" alt="">
+                <p>생연어장의 배송은<br><strong>CJ대한통운과 함께합니다.</strong></p>
+            </div>
+            <small>*배송 상황에 따라 <mark>롯데택배</mark>로 출고될 수 있습니다.</small>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>출고정보</th>
+                    <td>오후 12시 결제건까지 당일 출고<br>(영업일 기준)</td>
+                </tr>
+                <tr>
+                    <th>배송기간</th>
+                    <td>출고일로부터 1~2일 소요<br>(영업일 기준)<br><br>제품의 변질을 막기위해 토요일은 출고하지 않으므로, 화요일~토요일까지 수령 가능합니다.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="QnA-Area">
+            <h3>Q&amp;A<br><strong>궁금해요</strong></h3>
+            <ul>
+                <li>
+                    <span>보관 방법이 궁금해요</span>
+                    <p>냉장 보관해 주시면 됩니다.<br>드실 때 깨끗한 젓가락으로 덜어 드셔야 변질 우려가 적습니다.</p>
+                </li>
+                <li>
+                    <span>유통기한이 얼마나 되나요?</span>
+                    <p>유통기한은 냉장보관시 제조일로부터 7일입니다.<br>최상의 맛을 위해서는 빨리 섭취하시기를 권해드려요!</p>
+                </li>
+                <li>
+                    <span>꼭 확인해주세요!</span>
+                    <p>생연어장은 주문 후 제조가 들어가는 신선식품으로 그 특성상 단순변심으로 인한 교환,환불이 불가합니다.<br>
+                        또한 아래와 같은 경우에는 교환,환불,반품이 어려우니 신중한 구매 부탁드립니다.<br>
+                        수령지 지정시 꼭 참고해주세요!</p>
+                </li>
+            </ul>
+            <span>-고객님 부재로 인한 제품의 훼손으로 인해 반송되는 경우</span>
+            <span>-판매자와 협의없이 반송되는 경우</span>
+            <span>-주소지, 연락처 오기재로 인해 반송되는 경우</span>
+            <img src="images/detail-food-qna-bg01.jpg" alt="">
+        </div>
+    </section>
+    
+    <section class="purchase-info-Area tagetMenu" id="purchase">
+        <ul class="info-nav">
+            <li>
+                <a href="#">상품정보</a>
+            </li>
+            <li>
+                <a href="#">구매정보</a>
+            </li>
+            <li>
+                <a href="#">후기</a>
+            </li>
+            <li>
+                <a href="#">QnA</a>
+            </li>
+        </ul>
+
+        <ul class="purchase-infoTab">
+            <li>
+                <div>
+                    <h2>결제 안내</h2>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <blockquote>
+                    -결제수단 안내: 신용카드 / 실시간계좌이체(에스크로) / 휴대폰결제 / 무통장입금(가상계좌)<br>
+                    -무통장입금(가상계좌)의 경우, 12시간 이내 미 입금 시 주문이 자동 취소됩니다.<br>
+                    -이용 가능한 간편 결제 : 카카오페이, 삼성페이, L.Pay, 페이코(Payco), 네이버페이<br>
+                    -고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로<br>
+                    주문을 보류 또는 취소할 수 있습니다.
+                </blockquote>
+            </li>
+            <li>
+                <div>
+                    <h2>주문단계 안내</h2>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <blockquote>
+                    -입금전 ▶ 상품준비중 ▶ 배송준비중 ▶ 배송중 ▶ 배송완료
+                    <br><br>
+                    [수령지 정보 변경 안내]<br>
+                    -주문 상태가 '상품준비중' 상태일때만 배송지 정보(성함/주소/연락처/배송메시지) 변경이 가능하며, 아래의 경로를 통해서 직접 변경하실 수 있습니다.
+                    <br><br>
+                    ▷ 마이페이지 > 주문/배송 내역 > 주문번호 클릭 > 하단 [배송지 정보] 우측의 [배송지 변경] 클릭 > 배송 정보 수정 후 > [변경] 버튼 클릭
+                </blockquote>
+            </li>
+            <li>
+                <div>
+                    <h2>취소 안내</h2>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <blockquote>
+                    -결제수단 안내: 신용카드 / 실시간계좌이체(에스크로) / 휴대폰결제 / 무통장입금(가상계좌)<br>
+                    -무통장입금(가상계좌)의 경우, 12시간 이내 미 입금 시 주문이 자동 취소됩니다.<br>
+                    -이용 가능한 간편 결제 : 카카오페이, 삼성페이, L.Pay, 페이코(Payco), 네이버페이<br>
+                    -고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로<br>
+                    주문을 보류 또는 취소할 수 있습니다.
+                </blockquote>
+            </li>
+            <li>
+                <div>
+                    <h2>배송 안내</h2>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <blockquote>
+                    -브랜드별/출고지별 배송비 정책을 각각 운영하고 있습니다.<br>
+                    -묶음 배송은 동일한 주문 결제 건에 한하여 가능하며, 상품별 출고지가 다를 경우 묶음 배송은 불가합니다.<br>
+                    -도서산간지역은 별도의 추가 배송비를 지불하여야 하는 경우가 있습니다.<br>
+                    -수령인의 주소지가 불분명(아파트 동, 호수 등 상세 주소 미 기재 포함)하거나 수령자 부재, 연락 두절로 인하여 발생되는 반송 배송비는 구매자 부담이며, 또한 같은 사유로 배송 지연되어 변질된 상품은 교환 또는 반품이 되지 않으니 주문하실 때 반드시 연락 가능한 연락처를 남겨 주시기 바랍니다.<br>
+                    -상품이 택배사로 인도되면 배송중 상태가 되며, 택배사 운송장번호가 등록된 날로부터 7일 이내 배송완료 상태로 자동 전환됩니다.<br>
+                    -배송 완료 후 7일 이후에는 교환/반품이 불가합니다.
+                </blockquote>
+            </li>
+            <li>
+                <div>
+                    <h2>교환 및 반품 안내</h2>
+                    <span class="material-icons">expand_more</span>
+                </div>
+                <blockquote>
+                    -결제수단 안내: 신용카드 / 실시간계좌이체(에스크로) / 휴대폰결제 / 무통장입금(가상계좌)<br>
+                    -무통장입금(가상계좌)의 경우, 12시간 이내 미 입금 시 주문이 자동 취소됩니다.<br>
+                    -이용 가능한 간편 결제 : 카카오페이, 삼성페이, L.Pay, 페이코(Payco), 네이버페이<br>
+                    -고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로<br>
+                    주문을 보류 또는 취소할 수 있습니다.
+                </blockquote>
+            </li>
+        </ul>
+    </section>
+
+    <section class="review-Area tagetMenu" id="review">
+        <ul class="info-nav">
+            <li>
+                <a href="#">상품정보</a>
+            </li>
+            <li>
+                <a href="#">구매정보</a>
+            </li>
+            <li>
+                <a href="#">후기</a>
+            </li>
+            <li>
+                <a href="#">QnA</a>
+            </li>
+        </ul>
+        <div>
+            <h2>상품후기</h2>
+            <a href="">상품후기 작성하기</a>
+        </div>
+        <div>
+            <h3>포토후기</h3>
+            <div class="swiper-container photo-review">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                    <li class="swiper-slide">포토후기</li>
+                </ul>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next photo-button-next"></div>
+                <div class="swiper-button-prev photo-button-prev"></div>
+                <!-- Add Pagination -->
+            </div>
+        </div>
+
+        <ul class="review-list">
+            <li class="review-cotent">
+                <div class="toggle-review">
+                    <div class="review-star">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star-o.svg" alt="평점 별">
+                    </div>
+                    <span class="review-customer">정**</span>
+                    <span class="review-option">[옵션] : 와사마요 생연어장 230g (+1,000원)</span>
+                    <p>
+                        맛있습니다...네...밥 마요밥해 먹는사람 있어요 심심하지않게 마요네즈의 고소한 맛에 알싸한 고추냉이(와사비) 진하지 않고 은은하게 나는 맛이 밥에 올려먹으니 티스푼만하게 잘게
+                        썰린 연어의 부들부들 탱글한 식감과 함게 씹기좋아요 쪽파 한스푼 올리고 통깨솔솔 뿌려서 먹으면 굿입니다 다음엔 참치마요김밥 처럼 즉석 연어마요김밥 해먹어봐야겠어요 깻잎을
+                        얇게 썰어서 함께 먹어도 합이 맞을것 같아요
+                    </p>
+                    <div class="review-img">
+                        <img src="images/review-customer-bg01.jpg" alt="">
+                    </div>
+                </div>
+            </li>
+            <li  class="review-cotent">
+                <div class="toggle-review">
+                    <div class="review-star">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star-o.svg" alt="평점 별">
+                    </div>
+                    <span class="review-customer">정**</span>
+                    <span class="review-option">[옵션] : 와사마요 생연어장 230g (+1,000원)</span>
+                    <p>
+                        맛있습니다...네...밥 마요밥해 먹는사람 있어요 심심하지않게 마요네즈의 고소한 맛에 알싸한 고추냉이(와사비) 진하지 않고 은은하게 나는 맛이 밥에 올려먹으니 티스푼만하게 잘게
+                        썰린 연어의 부들부들 탱글한 식감과 함게 씹기좋아요 쪽파 한스푼 올리고 통깨솔솔 뿌려서 먹으면 굿입니다 다음엔 참치마요김밥 처럼 즉석 연어마요김밥 해먹어봐야겠어요 깻잎을
+                        얇게 썰어서 함께 먹어도 합이 맞을것 같아요
+                    </p>
+                    <div class="review-img">
+                        <!-- <img src="images/" alt=""> -->
+                    </div>
+                </div>
+            </li>
+            <li  class="review-cotent">
+                <div class="toggle-review">
+                    <div class="review-star">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                    </div>
+                    <span class="review-customer">정**</span>
+                    <span class="review-option">[옵션] : 와사마요 생연어장 230g (+1,000원)</span>
+                    <p>맛있어요. 또 사먹고 싶어요.</p>
+                    <div class="review-img">
+                        <!-- <img src="images/" alt=""> -->
+                    </div>
+                </div>
+            </li>
+            <li  class="review-cotent">
+                <div class="toggle-review">
+                    <div class="review-star">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star-o.svg" alt="평점 별">
+                        <img src="images/ic-yellow-star-o.svg" alt="평점 별">
+                    </div>
+                    <span class="review-customer">정**</span>
+                    <span class="review-option">[옵션] : 와사마요 생연어장 230g (+1,000원)</span>
+                    <p>
+                        맛있습니다...네...밥 마요밥해 먹는사람 있어요 심심하지않게 마요네즈의 고소한 맛에 알싸한 고추냉이(와사비) 진하지 않고 은은하게 나는 맛이 밥에 올려먹으니 티스푼만하게 잘게
+                        썰린 연어의 부들부들 탱글한 식감과 함게 씹기좋아요 쪽파 한스푼 올리고 통깨솔솔 뿌려서 먹으면 굿입니다 다음엔 참치마요김밥 처럼 즉석 연어마요김밥 해먹어봐야겠어요 깻잎을
+                        얇게 썰어서 함께 먹어도 합이 맞을것 같아요
+                    </p>
+                    <div class="review-img">
+                        <!-- <img src="imgaes/images/review-customer-bg01.jpg" alt=""> -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="pagediv">
+            <a href="#none"></a>
+            <a href="#none">1</a>
+            <a href="#none">2</a>
+            <a href="#none">3</a>
+            <a href="#none">4</a>
+            <a href="#none">5</a>
+            <a href="#none">6</a>
+            <a href="#none">7</a>
+            <a href="#none">8</a>
+            <a href="#none">9</a>
+            <a href="#none">10</a>
+            <a href="#none"></a>
+        </div>
+    </section>
+
+    <section class="Question-Area tagetMenu" id="Question">
+        <ul class="info-nav">
+            <li>
+                <a href="#">상품정보</a>
+            </li>
+            <li>
+                <a href="#">구매정보</a>
+            </li>
+            <li>
+                <a href="#">후기</a>
+            </li>
+            <li>
+                <a href="#">QnA</a>
+            </li>
+        </ul>
+        <div>
+            <h2>Q&amp;A</h2>
+            <a href="">Q&amp;A 작성하기</a>
+        </div>    
+        <ul class="qna-list">
+            <li class="qna-content">
+                <div class="toggle-qna">
+                    <div class="qna-view">
+                        <span class="qna-title">배송문의</span>
+                        <span class="qna-customer">정회석</span>
+                        <span class="qna-finish">답변완료</span>
+                    </div>
+                    <!-- <img src="images/ic-cement-lock-o.svg" alt="비밀글 아이콘"> -->
+                    <p>비밀글입니다!</p>
+                    <div class="qna-toggle-active">
+                        <img src="images/" alt="">
+                        <p class="qna-info">비밀글입니다!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="qna-content">
+                <div class="toggle-qna">
+                    <div class="qna-view">
+                        <span class="qna-title">배송문의</span>
+                        <span class="qna-customer">홍길동</span>
+                        <span class="qna-finish">답변완료</span>
+                    </div>
+                    <p>반찬으로 먹으면 한통에 몇인분인가요? </p>
+                    <div class="qna-toggle-active">
+                        <img src="images/" alt="">
+                        <p class="qna-info">안녕하세요 고객님, 230g 기준 성인1인기준 밥 1~2번가량 섭취하실수 있는 양입니다.<br>참고 부탁드립니다, 감사합니다.</p>
+                    </div>
+                </div>
+                
+            </li>
+            <li class="qna-content">
+                <div class="toggle-qna">
+                    <div class="qna-view">
+                        <span class="qna-title">배송문의</span>
+                        <span class="qna-customer">홍길동</span>
+                        <span class="qna-finish">답변완료</span>
+                    </div>
+                    <p>반찬으로 먹으면 한통에 몇인분인가요? </p>
+                    <div class="qna-toggle-active">
+                        <img src="images/" alt="">
+                        <p class="qna-info">안녕하세요 고객님, 230g 기준 성인1인기준 밥 1~2번가량 섭취하실수 있는 양입니다.<br>참고 부탁드립니다, 감사합니다.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="qna-content">
+                <div class="toggle-qna">
+                    <div class="qna-view">
+                        <span class="qna-title">배송문의</span>
+                        <span class="qna-customer">홍길동</span>
+                        <span class="qna-finish">답변완료</span>
+                    </div>
+                    <p>반찬으로 먹으면 한통에 몇인분인가요? </p>
+                    <div class="qna-toggle-active">
+                        <img src="images/" alt="">
+                        <p class="qna-info">안녕하세요 고객님, 230g 기준 성인1인기준 밥 1~2번가량 섭취하실수 있는 양입니다.<br>참고 부탁드립니다, 감사합니다.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="pagediv">
+            <a href="#none"></a>
+            <a href="#none">1</a>
+            <a href="#none">2</a>
+            <a href="#none">3</a>
+            <a href="#none">4</a>
+            <a href="#none">5</a>
+            <a href="#none">6</a>
+            <a href="#none">7</a>
+            <a href="#none">8</a>
+            <a href="#none">9</a>
+            <a href="#none">10</a>
+            <a href="#none"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="address-foot">
+            <ul>
+                <li>
+                    <h3>전화상담</h3>
+                    <address>
+                        <span>1688-3532</span>
+                        상담 오전 10시 ~ 오후 5시 점심 오후 12시 ~ 1시)<br>
+                        휴일 weekend / holiday<br>
+                        카카오톡 아이디
+                    </address>
+                </li>
+                <li>
+                    <h3>E-mail/제휴문의</h3>
+                    <address>
+                        마케팅 제휴문의 marketing@cookat.co<br>
+                        상품 제휴문의 product@cookat.co<br>
+                        개인정보보호 책임자<br>
+                        주지석 (jiseok.joo@cookat.co)
+                    </address>
+                </li>
+                <li>
+                    <h3>교환/반품 주소</h3>
+                    <address>
+                        주소<br>
+                        서울특별시 강남구 영동대로 112길 36 (삼성동)<br>
+                        지정택배사 : CJ대한통운(1588-1255)<br>
+                        교환/반품시에도 해당 택배를 이용하여 처리해주시기 바랍니다.
+                    </address>
+                </li>
+            </ul>
+        </div>
+        <div class="cookat-info">
+            <div class="info-h">
+                <h2>쿠켓마켓 ::</h2>
+                <span>COOKAT MARKAT</span>
+            </div>
+            <div class="info-right">
+                <span>OWNER : 이문주</span>
+                <span>주소 : 서울특별시 강남구 영동대로 112길 36 (삼성동)</span>
+                <span>사업자등록번호 : 110-86-12995</span><a href="#">사업자정보 확인></a>
+                <br>
+                <span>통신판매업 신고번호 : 2018-서울강남-01681</span>
+                <span>마케팅 제휴문의 : marketing@cookat.co</span>
+                <br>
+                <span>Copyright © 쿠캣마켓. All rights reserved.</span>
+            </div>
+
+        </div>
+        <div class="last-foot">
+            <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보정책</a></li>
+                <li><a href="">전자금융거래이용약관</a></li>
+                <li><img src="images/deal-icon.png" alt=""> 공정거래위원회</li>
+                <li><img src="/images/haccp-icon.png" alt=""> 식품안전인증</li>
+                <div class="sns-icon">
+                    <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="images/facebook.png" alt="facebook"></a>
+                    <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

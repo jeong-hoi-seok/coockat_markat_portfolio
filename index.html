@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookat_markat_mainPage</title>
+    <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/cookat_mainPage.js"></script>
+</head>
+<body>
+    <a class="top-button">
+        <span class="material-icons">expand_less</span>
+    </a>
+    <header>
+        <div class="main-info">
+            <span>음식은 쿠켓마켓에서</span>
+        </div>
+        <div class="flex-content">
+            <!-- <div class="top-snsBar">
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+            </div> -->
+            <ul>
+                <li>
+                    <a href="login_before.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li class="service-center">
+                    <span>고객센터</span>
+                    <ol class="service-center-slide">
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="">회원혜택</a>
+                        </li>
+                        <li>
+                            <a href="">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="">고객센터 안내</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">배송지역검색</a>
+                </li>
+            </ul>
+        </div>
+        <!-- top_sitemap -->
+        <h1>
+            <a href="index.html"><img src="images/cookat_logo.png" alt="cookat_logo"></a>
+        </h1>
+        <!-- cookat logo -->
+        <nav>
+            <ul class="gnb">
+                <li class="all_category bar">
+                    <ul class="gnb-sub">
+                        <li>
+                            <img src="images/ic-category-with-gray-bg.svg" alt="">
+                            전체상품
+                            <ul class="sub-menu">
+                                <li><a href="sup_buy_page.html">장류/반찬</a></li>
+                                <li><a href="sup_buy_page.html">요리/안주</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-new.svg" alt="">
+                            신상품
+                        </li>
+                        <li>
+                            <img src="images/ic-best.svg" alt="">
+                            베스트
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-simple-big.svg" alt="">
+                            간편식
+                            <ul class="sub-menu">
+                                <li><a href="">TEST01</a></li>
+                                <li><a href="">간편식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-dessert.svg" alt="">
+                            디저트
+                            <ul class="sub-menu">
+                                <li><a href="">TEST02</a></li>
+                                <li><a href="">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-diet.svg" alt="">
+                            식단관리
+                            <ul class="sub-menu">
+                                <li><a href="">TEST03</a></li>
+                                <li><a href="">식단관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-homeliving-renew.svg" alt="">
+                            홈/리빙
+                            <ul class="sub-menu">
+                                <li><a href="">TEST04</a></li>
+                                <li><a href="">홈/리빙</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span class="material-icons">list</span> -->
+                    <a href="#none">카테고리</a>
+                </li>
+                <li class="top-menu bar"><a href="">베스트</a></li>
+                <li class="top-menu bar"><a href="">신상품</a></li>
+                <li class="top-menu bar"><a href="">런칭특가</a></li>
+                <li class="top-menu"><a href="">이벤트</a></li>
+                <li class="serch-menu">
+                    <form>
+                        <label for="commodity-search"></label>
+                        <input type="search" id="commodity-search" placeholder="검색어를 입력해주세요.">
+                        <input type="image" src="images/search-black-18dp.svg" class="btn-search" alt="scarch-black">
+                    </form>
+                </li>
+                <li>
+                    <a href=""><img src="images/shopping-cart.png" alt="shopping-cart"></a>
+                    <span class="cart-count"></span>
+                </li>
+            </ul>
+        </nav>
+        <!-- fixd -->
+    </header>
+
+    <section class="mainbanner-Area">
+        <h2>mainbanner-slide</h2>
+        <div class="swiper-container mainbanner-slide">
+            <!-- display none title -->
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="buy.html"><img src="images/event_bg01.png" alt="banner01"></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="buy.html"><img src="images/event_bg02.png" alt="banner02"></a>
+                </li>
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination mainbanner-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next mainbanner-button-next"></div>
+            <div class="swiper-button-prev mainbanner-button-prev"></div>
+        </div>
+    </section>
+    <!-- infinite-slide -->
+
+    <section class="timedeal-Area">
+        <h2>
+            타임딜
+            <small>지금만 이 가격! 타임딜 놓치지 마세요.</small>
+        </h2>
+        <ul class="glo-section">
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/timedeal-bg01.png" alt="젓갈"></a>
+                    <div class="timedeal-count-down">
+                        <span class="hour" date-time="0"></span>:
+                        <span class="minute" date-time="0"></span>:
+                        <span class="second" date-time="10"></span>
+                    </div>
+                    <div class="timeover">
+                        <span></span>
+                    </div>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                쿠켓마켓 젓갈 3종
+                            </h3>
+                            <p>(오징어젓/낙지젓/비빔젓갈/오징어젓/낙지젓/비빔젓갈</p>
+                            <mark class="sale-value">20</mark>
+                            <span  class="final-value"><strong></strong></span>
+                            <del class="original-value">12300</del>
+                            <!-- css text-decoration:line-through -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/timedeal-bg02.png" alt="핫도그"></a>
+                    <div class="timedeal-count-down">
+                        <span class="hour" date-time="3"></span>:
+                        <span class="minute" date-time="42"></span>:
+                        <span class="second" date-time="2"></span>
+                    </div>
+                    <div class="timeover">
+                        <span></span>
+                    </div>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                에슐리 핫도그 3종
+                            </h3>
+                            <p>(통 모짜렐라/모짜렐라 탱글/모짜렐라 땡초)</p>
+                            <mark class="sale-value">5</mark>
+                            <span  class="final-value"><strong></strong></span>
+                            <del class="original-value">6900</del>
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/timedeal-bg03.png" alt="소불고기"></a>
+                    <div class="timedeal-count-down">
+                        <span class="hour" date-time="5"></span>:
+                        <span class="minute" date-time="1"></span>:
+                        <span class="second" date-time="39"></span>
+                    </div>
+                    <div class="timeover">
+                        <span></span>
+                    </div>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                한일관 꿀불고기 500g 1팩
+                                <!-- <p></p> -->
+                            </h3>
+                            <!-- <mark class="sale-value">5%</mark> -->
+                            <span class="final-value"><strong>12900</strong></span>
+                            <!-- <del class="original value">6900</del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <!-- 3 section food -->
+    
+    <section class="welcome2500-Area">
+        <h2>
+            이리오시오 2,500원 모음!
+            <small>1만개 후기 "고등어"부터 "둥지바게트"까지 ~19%할인</small>
+        </h2>
+        <ul class="glo-section">
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/welcome2500-bg01.png" alt="둥지바게트"></a>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                쿠캣마켓 둥지바게트 3종
+                            </h3>
+                            <p>(콰트로치즈/마늘/바질)</p>
+                            <!-- <mark class="sale-value">%</mark> -->
+                            <span  class="final-value"><strong>2500</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/welcome2500-bg02.png" alt="투명만두"></a>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                쿠캣마켓 투명만두
+                            </h3>
+                            <p>(고기/김치/새우)</p>
+                            <mark class="sale-value">7</mark>
+                            <span  class="final-value"><strong></strong></span>
+                            <del class="original-value">2700</del>
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/welcome2500-bg03.png" alt="장조림볶음밥"></a>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                비벼먹는 쇠고기 버터장조림
+                            </h3>
+                            <!-- <p></p> -->
+                            <!-- <mark class="sale-value">%</smark -->
+                            <span  class="final-value"><strong>2500</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href="buy.html"><img src="images/welcome2500-bg04.png" alt="고등어"></a>
+                    <figcaption>
+                        <a href="buy.html">
+                            <h3>
+                                전자레인지용 즉석구이 순살고등어
+                            </h3>
+                            <!-- <p>)</p> -->
+                            <!-- <mark class="sale-value">%</smark -->
+                            <span  class="final-value"><strong>2500</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <!-- 4 section food -->
+
+    <section class="MDrecommend-Area">
+        <h2>MD 추천</h2>
+        <div class="swiper-container MDrecommend-slide">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="images/md-bg01.jpg" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <dl>
+                                    <dt>소중한 나를 위한<br>균형잡힌 한 끼</dt>
+                                    <dd>띵커바디 도시락 6종</dd>
+                                </dl>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">        
+                    <figure>
+                        <a href="buy.html"><img src="images/md-bg02.png" alt="물회"></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <dl>
+                                    <dt>뜯고 부으면 완성 되는<br>물회는 지금 할인</dt>
+                                    <dd>해물3종 모듬물회</dd>
+                                </dl>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">        
+                    <figure>
+                        <a href="buy.html"><img src="images/md-bg03.png" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <dl>
+                                    <dt>고구마의 부드러운 변신<br>촉촉하고 말랑한</dt>
+                                    <dd>띵커바디 고구마말랭</dd>
+                                </dl>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">        
+                    <figure>
+                        <a href="buy.html"><img src="images/md-bg04.png" alt="누텔라"></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <dl>
+                                    <dt>우리집에 펼쳐지는<br>미국의 향</dt>
+                                    <dd>마성의 스프레드 5종</dd>
+                                </dl>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+
+    <section class="barobaro-Area">
+        <h2>
+            맛있는 건 '바로바로' 먹어야 제맛
+            <small>자취 필수템! 요린이 필수템! 리큅 멀티쿠커+티포트 2in1 '바로바로 쿡'</small>
+        </h2>
+        <div class="swiper-container button2section-slide">
+            <ul class="swiper-wrapper glo-section">
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    쿠캣마켓 순살 찜닭 2종
+                                </h3>
+                                <p>(까만찜닭/빨간찜닭)</p>
+                                <!-- <mark class="sale-value">7%<//mark> -->
+                                <span  class="final-value"><strong>6900</strong></span>
+                                <!-- <del class="original value">2700</del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    리큅 바로바로 쿡
+                                </h3>
+                                <!-- <p></p> -->
+                                <mark class="sale-value">36</mark>
+                                <span  class="final-value"><strong></strong></span>
+                                <del class="original-value">139000</del>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    실온 한우곰탕
+                                </h3>
+                                <p>(소머리)</p>
+                                <!-- <mark class="sale-value">7%<//mark> -->
+                                <span  class="final-value"><strong>3900</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="images/barobaro-bg01.png" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    매직펌킨 호박티백
+                                </h3>
+                                <p>(20T)</p>
+                                <!-- <mark class="sale-value">7%<//mark> -->
+                                <span  class="final-value"><strong>14800</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    쿠캣마켓 굴림만두 3종
+                                </h3>
+                                <p>(청양/고기/김치)</p>
+                                <!-- <mark class="sale-value">7%<//mark> -->
+                                <span  class="final-value"><strong>3500</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href="buy.html"><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="buy.html">
+                                <h3>
+                                    쿠캣마켓 투명만두
+                                </h3>
+                                <p>(고기/김치/새우)</p>
+                                <!-- <mark class="sale-value">7%<//mark> -->
+                                <span  class="final-value"><strong>2500</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next barobaro-button-next"></div>
+            <div class="swiper-button-prev barobaro-button-prev"></div>
+        </div>
+
+    </section>
+    <!-- 4 slide section food -->
+    
+    <section class="noodle-Area">
+        <h2>
+            면치기 면치기 차차차
+            <small>성공한 여자는 이렇게 면치기를 해줘야지 읏-쨔</small>
+        </h2>
+        <div class="swiper-container button2section-slide">
+            <ul class="swiper-wrapper glo-section">
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    꼰대인턴 핫쭈꾸미볶음면 by 준수식품
+                                </h3>
+                                <!-- <p></p> -->
+                                <!-- <mark class="sale-value">7%</mark> -->
+                                <span class="final-value"><strong>6900</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    꼰대인턴 찐꼬막비빔면 by 준수식품
+                                </h3>
+                                <!-- <p></p> -->
+                                <!-- <mark class="sale-value">%</mark> -->
+                                <span class="final-value"><strong>6900</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    간단한 요리 한그릇 비빔생쫄면
+                                </h3>
+                                <p>(2인분)</p>
+                                <!-- <mark class="sale-value">7%</mark> -->
+                                <span class="final-value"><strong>3500</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    매드포갈릭 밀키트 3종
+                                </h3>
+                                <p>(아라비아따/갈릭페뇨파스타/갈릭스테이크)</p>
+                                <mark class="sale-value">19</mark>
+                                <span class="final-value"><strong></strong></span>
+                                <del class="original-value">15500</del>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    놀부 욕심담은 부대찌개
+                                </h3>
+                                <!-- <p></p> -->
+                                <!-- <mark class="sale-value">7%</mark> -->
+                                <span class="final-value"><strong>6900</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="swiper-slide">
+                    <figure>
+                        <a href=""><img src="http://placehold.it/250x326" alt=""></a>
+                        <figcaption>
+                            <a href="">
+                                <h3>
+                                    띵커바디 곤약면 3종
+                                </h3>
+                                <p>(오늘비빔/소바/하노이)</p>
+                                <!-- <mark class="sale-value">7%</mark> -->
+                                <span class="final-value"><strong>6900</strong></span>
+                                <!-- <del class="original value"></del> -->
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-button-next barobaro-button-next"></div>
+            <div class="swiper-button-prev barobaro-button-prev"></div>
+        </div>
+
+    </section>
+    <!-- 4 slide section food -->
+
+    <section class="tvcf-Area">
+        <h2>
+            TV 속 바로 그 제품
+            <small>JTBC '아는형님'이 아주 칭찬해!</small>
+        </h2>
+        <div>
+            <a href="">
+                <img src="images/tv-cf-mainbg01.png" alt="아는형님">
+                <p>아형 장학퀴즈<br>우승 팀 간식은?</p>
+            </a>
+            <figure>
+                <a href=""><img src="http://placehold.it/340x325" alt="딸기쏙우유 찹쌀떡"></a>
+                <figcaption>
+                    <a href="">
+                        <h3>
+                            쿠캣마켓 딸기쏙우유 찹쌀떡
+                        </h3>
+                        <p>(9개입)</p>
+                        <!-- <mark class="sale-value">7%</mark> -->
+                        <span class="final-value"><strong>9900</strong></span>
+                        <!-- <del class="original value"></del> -->
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+        <ul class="glo-section">
+            <li>
+                <figure>
+                    <a href=""><img src="http://placehold.it/250x250" alt="티라미수쏙찹쌀떡"></a>
+                    <figcaption>
+                        <a href="">
+                            <h3>
+                                쿠캣마켓 티라미수쏙찹쌀떡
+                            </h3>
+                            <p>(9개입)</p>
+                            <!-- <mark class="sale-value">7%</mark> -->
+                            <span class="final-value"><strong>10900</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href=""><img src="http://placehold.it/250x250" alt="모짜통통치즈볼"></a>
+                    <figcaption>
+                        <a href="">
+                            <h3>
+                                쿠캣마켓 모짜통통치즈볼
+                            </h3>
+                            <!-- <p></p> -->
+                            <!-- <mark class="sale-value">7%</mark> -->
+                            <span class="final-value"><strong>6900</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href=""><img src="http://placehold.it/250x250" alt="감자탕볶음밥"></a>
+                    <figcaption>
+                        <a href="">
+                            <h3>
+                                쿠캣마켓 감자탕볶음밥
+                            </h3>
+                            <!-- <p></p> -->
+                            <!-- <mark class="sale-value">7%</mark> -->
+                            <span class="final-value"><strong>2500</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <a href=""><img src="http://placehold.it/250x250" alt="오리껍데기"></a>
+                    <figcaption>
+                        <a href="">
+                            <h3>
+                                쿠캣포차 오리껍데기
+                            </h3>
+                            <!-- <p></p> -->
+                            <!-- <mark class="sale-value">7%</mark> -->
+                            <span class="final-value"><strong>5500</strong></span>
+                            <!-- <del class="original value"></del> -->
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <!-- 2 to 4 section food -->
+
+    <section class="top5-ranking-Area">
+        <h2>
+            인기 검색어 TOP 5
+        </h2>
+        <span class="now-datetime"></span>
+        <div class="top5-ranking-tab">
+            <ol class="top5-ranking-content">
+                <li>
+                    <div class="top5-tab-list">
+                        <p>찹쌀떡</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <!-- 랭킹제품이름 -->
+                    <div class="activelist">
+                        <div class="leftcontent">
+                            <a href=""><img src="http://placehold.it/430x370" alt=""></a>
+                        </div>
+                        <div class="rightcontent">
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top5-tab-list">
+                        <p>띵커바디</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <!-- 랭킹제품이름 -->
+                    <div class="activelist">
+                        <div class="leftcontent">
+                            <a href=""><img src="http://placehold.it/430x370" alt=""></a>
+                        </div>
+                        <div class="rightcontent">
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top5-tab-list">
+                        <p>만두</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <!-- 랭킹제품이름 -->
+                    <div class="activelist">
+                        <div class="leftcontent">
+                            <a href=""><img src="http://placehold.it/430x370" alt=""></a>
+                        </div>
+                        <div class="rightcontent">
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top5-tab-list">
+                        <p>떡</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <!-- 랭킹제품이름 -->
+                    <div class="activelist">
+                        <div class="leftcontent">
+                            <a href=""><img src="http://placehold.it/430x370" alt=""></a>
+                        </div>
+                        <div class="rightcontent">
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top5-tab-list">
+                        <p>닭발</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <!-- 랭킹제품이름 -->
+                    <div class="activelist">
+                        <div class="leftcontent">
+                            <a href=""><img src="http://placehold.it/430x370" alt=""></a>
+                        </div>
+                        <div class="rightcontent">
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                            <a href=""><img src="http://placehold.it/250x175" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <div class="address-foot">
+            <ul>
+                <li>
+                    <h3>전화상담</h3>
+                    <address>
+                        <span>1688-3532</span>
+                        상담 오전 10시 ~ 오후 5시 점심 오후 12시 ~ 1시)<br>
+                        휴일 weekend / holiday<br>
+                        카카오톡 아이디
+                    </address>
+                </li>
+                <li>
+                    <h3>E-mail/제휴문의</h3>
+                    <address>
+                        마케팅 제휴문의 marketing@cookat.co<br>
+                        상품 제휴문의 product@cookat.co<br>
+                        개인정보보호 책임자<br>
+                        주지석 (jiseok.joo@cookat.co)
+                    </address>
+                </li>
+                <li>
+                    <h3>교환/반품 주소</h3>
+                    <address>
+                        주소<br>
+                        서울특별시 강남구 영동대로 112길 36 (삼성동)<br>
+                        지정택배사 : CJ대한통운(1588-1255)<br>
+                        교환/반품시에도 해당 택배를 이용하여 처리해주시기 바랍니다.
+                    </address>
+                </li>
+            </ul>
+        </div>
+        <div class="cookat-info">
+            <div class="info-h">
+                <h2>쿠켓마켓 ::</h2>
+                <span>COOKAT MARKAT</span>
+            </div>
+            <div class="info-right">
+                <span>OWNER : 이문주</span>
+                <span>주소 : 서울특별시 강남구 영동대로 112길 36 (삼성동)</span>
+                <span>사업자등록번호 : 110-86-12995</span><a href="#">사업자정보 확인></a>
+                <br>
+                <span>통신판매업 신고번호 : 2018-서울강남-01681</span>
+                <span>마케팅 제휴문의 : marketing@cookat.co</span>
+                <br>
+                <span>Copyright © 쿠캣마켓. All rights reserved.</span>
+            </div>
+
+        </div>
+        <div class="last-foot">
+            <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보정책</a></li>
+                <li><a href="">전자금융거래이용약관</a></li>
+                <li><img src="images/deal-icon.png" alt=""> 공정거래위원회</li>
+                <li><img src="/images/haccp-icon.png" alt=""> 식품안전인증</li>
+                <div class="sns-icon">
+                    <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="images/facebook.png" alt="facebook"></a>
+                    <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

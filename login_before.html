@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UpPage</title>
+    <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/cookat_mainPage.js"></script>
+</head>
+<body>
+    <a class="top-button">
+        <span class="material-icons">expand_less</span>
+    </a>
+    <header>
+        <div class="main-info">
+            <span>음식은 쿠켓마켓에서</span>
+        </div>
+        <div class="flex-content">
+            <!-- <div class="top-snsBar">
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+            </div> -->
+            <ul>
+                <li>
+                    <a href="login_before.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li class="service-center">
+                    <span>고객센터</span>
+                    <ol class="service-center-slide">
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="">회원혜택</a>
+                        </li>
+                        <li>
+                            <a href="">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="">고객센터 안내</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">배송지역검색</a>
+                </li>
+            </ul>
+        </div>
+        <!-- top_sitemap -->
+        <h1>
+            <a href="index.html"><img src="images/cookat_logo.png" alt="cookat_logo"></a>
+        </h1>
+        <!-- cookat logo -->
+        <nav>
+            <ul class="gnb">
+                <li class="all_category bar">
+                    <ul class="gnb-sub">
+                        <li>
+                            <img src="images/ic-category-with-gray-bg.svg" alt="">
+                            전체상품
+                            <ul class="sub-menu">
+                                <li><a href="sup_buy_page.html">장류/반찬</a></li>
+                                <li><a href="sup_buy_page.html">요리/안주</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-new.svg" alt="">
+                            신상품
+                        </li>
+                        <li>
+                            <img src="images/ic-best.svg" alt="">
+                            베스트
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-simple-big.svg" alt="">
+                            간편식
+                            <ul class="sub-menu">
+                                <li><a href="">TEST01</a></li>
+                                <li><a href="">간편식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-dessert.svg" alt="">
+                            디저트
+                            <ul class="sub-menu">
+                                <li><a href="">TEST02</a></li>
+                                <li><a href="">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-diet.svg" alt="">
+                            식단관리
+                            <ul class="sub-menu">
+                                <li><a href="">TEST03</a></li>
+                                <li><a href="">식단관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="images/ic-orange-gray-homeliving-renew.svg" alt="">
+                            홈/리빙
+                            <ul class="sub-menu">
+                                <li><a href="">TEST04</a></li>
+                                <li><a href="">홈/리빙</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span class="material-icons">list</span> -->
+                    <a href="#none">카테고리</a>
+                </li>
+                <li class="top-menu bar"><a href="">베스트</a></li>
+                <li class="top-menu bar"><a href="">신상품</a></li>
+                <li class="top-menu bar"><a href="">런칭특가</a></li>
+                <li class="top-menu"><a href="">이벤트</a></li>
+                <li class="serch-menu">
+                    <form>
+                        <label for="commodity-search"></label>
+                        <input type="search" id="commodity-search" placeholder="검색어를 입력해주세요.">
+                        <input type="image" src="images/search-black-18dp.svg" class="btn-search" alt="scarch-black">
+                    </form>
+                </li>
+                <li>
+                    <a href=""><img src="images/shopping-cart.png" alt="shopping-cart"></a>
+                    <span class="cart-count"></span>
+                </li>
+            </ul>
+        </nav>
+        <!-- fixd -->
+    </header>
+
+    <section class="sign-up">
+        <h2 class="sign-up-tittle">회원가입</h2>
+        <form>
+            <fieldset>
+                <legend>회원가입</legend>
+
+                <label for="email">이메일</label>
+                <input class="glo-focus" type="email" name="gloemail" id="email" value="" placeholder="이메일을 입력해주세요.">
+                <span class="id-error"></span>
+                <!-- email -->
+                <label for="password">비밀번호</label>
+                <input minlength="8" maxlength="20" class="glo-focus" type="password" name="glo password" id="password" value="" value placeholder="비밀번호를 입력해주세요.">
+                <span class="sing-pw-error">8~20자 이내로 입력해주세요.</span>
+                <!-- password -->
+                <label for="passwordcheck">비밀번호 확인</label>
+                <input class="glo-focus" type="password" name="passwordcheck" id="passwordcheck" value="" placeholder="비밀번호를 다시 입력해주세요.">
+                <span class="sing-pw-check-error">비밀번호가 일치하지 않습니다.</span>
+                <!-- password-check -->
+                <label for="name">이름</label>
+                <input class="glo-focus" type="text" name="name" id="name" value="" placeholder="이름을 입력해주세요.">
+                <span></span>
+                <!-- name -->
+                <label for="tel">휴대전화</label>
+                <input class="glo-focus" type="tel" name="tel" id="tel" value="" placeholder="- 를 제외하고 입력해주세요.">
+                <button type="button">인증번호 받기</button>
+                <span></span>
+                <!-- call-number -->
+                <label for="telnumber">인증번호</label>
+                <input class="glo-focus" type="text" name="telnumber" id="telnumber" value="" placeholder="인증번호를 입력해주세요.">
+                <button class="tel-submit" type="submit">확인</button>
+                <span></span>
+                <!-- call-number-check -->
+                <label>성별</label>
+                <div class="gender-group">
+                    <input type="radio" name="genderGroup" id="genderman">
+                    <label for="genderman">남자</label>
+                    <input type="radio" name="genderGroup" id="genderwoman">
+                    <label for="genderwoman">여자</label>
+                    <input type="radio" name="genderGroup" id="gendernone">
+                    <label for="gendernone">상관없음</label>
+                </div>
+                <!-- gender -->
+                <label>생년월일</label>
+                <select name="year" id="year">
+                    <option disabled selected>년도</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                </select>
+                <select name="monte" id="monte">
+                    <option disabled selected>월</option>
+                    <option value="31">1</option>
+                    <option value="28">2</option>
+                    <option value="31">3</option>
+                    <option value="30">4</option>
+                    <option value="31">5</option>
+                    <option value="30">6</option>
+                    <option value="31">7</option>
+                    <option value="31">8</option>
+                    <option value="30">9</option>
+                    <option value="31">10</option>
+                    <option value="30">11</option>
+                    <option value="31">12</option>
+                </select>
+                <select class="day" name="30day" id="30day">
+                    <option disabled selected>일</option>
+                    <option value="">30</option>
+                </select>
+                <select class="day" name="31day" id="31day">
+                    <option disabled selected>일</option>
+                    <option value="">31</option>
+                </select>
+                <select class="day" name="28day" id="28day">
+                    <option disabled selected>일</option>
+                    <option value="">28</option>
+                </select>
+                <span class="birthinfo birthage14">- 만 14세 이상만 가입할 수 있어요.</span>
+                <span class="birthinfo">- 생일 기준 7일 전 15% 할인 축하 쿠폰을 드려요!</span>
+
+                <div class="age-14-check">
+                    <input type="checkbox" name="cbage" id="cbage">
+                    <label for="cbage">
+                        만 14세 이상입니다.
+                        <span class="necs">(필수)</span>
+                    </label>
+                </div>
+                
+                <div class="age-all-check">
+                    <div class="allcb">
+                        <input type="checkbox" name="allcb" id="allcb">
+                        <label for="allcb">약관에 모두 동의합니다.</label>
+                        <!-- <span class="material-icons">expand_more</span> -->
+                    </div>
+                    <ul class="cball">
+                        <li>
+                            <div> 
+                                <input type="checkbox" name="cb01" id="cb01">
+                                <label for="cb01">쿠켓마켓 이용약관
+                                    <span class="necs">(필수)</span>
+                                </label>
+                                <!-- <span class="material-icons">expand_more</span> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div>    
+                                <input type="checkbox" name="cb02" id="cb02">
+                                <label for="cb02">개인정보 수집 및 이용 동의</label>
+                                <span class="material-icons">expand_more</span>
+                            </div>
+                            <div class="custermarinfo">
+                                <blockquote><h3>제1장 총칙</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</blockquote>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="cb03" id="cb03">
+                                <label for="cb03">개인정보 제3자 제공 동의</label>
+                                <span class="material-icons">expand_more</span>
+                            </div>
+                            <div class="custermarinfo">
+                                <blockquote><h3>개인정보 제3자 제공 동의안</h3>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</blockquote>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="cb04" id="cb04">
+                                <label for="cb04">개인정보 처리 위탁 동의</label>
+                                <span class="material-icons">expand_more</span>
+                            </div>
+                            <div class="custermarinfo">
+                                <blockquote><h3>개인정보 처리 위탁 동의안</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</blockquote>
+                            </div>
+                        </li>
+                        <li>
+                            <div>    
+                                <input type="checkbox" name="cb05" id="cb05">
+                                <label for="cb05">SMS/이메일 (마케팅 정보) 수신 동의</label>
+                                <span class="material-icons">expand_more</span>
+                            </div>
+                            <div class="custermarinfo">
+                                <blockquote><h3>마케팅 수신 정보 동의안</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="submit-sign-up" type="submit">
+                    <span>가입하기</span>
+                </button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <div class="address-foot">
+            <ul>
+                <li>
+                    <h3>전화상담</h3>
+                    <address>
+                        <span>1688-3532</span>
+                        상담 오전 10시 ~ 오후 5시 점심 오후 12시 ~ 1시)<br>
+                        휴일 weekend / holiday<br>
+                        카카오톡 아이디
+                    </address>
+                </li>
+                <li>
+                    <h3>E-mail/제휴문의</h3>
+                    <address>
+                        마케팅 제휴문의 marketing@cookat.co<br>
+                        상품 제휴문의 product@cookat.co<br>
+                        개인정보보호 책임자<br>
+                        주지석 (jiseok.joo@cookat.co)
+                    </address>
+                </li>
+                <li>
+                    <h3>교환/반품 주소</h3>
+                    <address>
+                        주소<br>
+                        서울특별시 강남구 영동대로 112길 36 (삼성동)<br>
+                        지정택배사 : CJ대한통운(1588-1255)<br>
+                        교환/반품시에도 해당 택배를 이용하여 처리해주시기 바랍니다.
+                    </address>
+                </li>
+            </ul>
+        </div>
+        <div class="cookat-info">
+            <div class="info-h">
+                <h2>쿠켓마켓 ::</h2>
+                <span>COOKAT MARKAT</span>
+            </div>
+            <div class="info-right">
+                <span>OWNER : 이문주</span>
+                <span>주소 : 서울특별시 강남구 영동대로 112길 36 (삼성동)</span>
+                <span>사업자등록번호 : 110-86-12995</span><a href="#">사업자정보 확인></a>
+                <br>
+                <span>통신판매업 신고번호 : 2018-서울강남-01681</span>
+                <span>마케팅 제휴문의 : marketing@cookat.co</span>
+                <br>
+                <span>Copyright © 쿠캣마켓. All rights reserved.</span>
+            </div>
+
+        </div>
+        <div class="last-foot">
+            <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보정책</a></li>
+                <li><a href="">전자금융거래이용약관</a></li>
+                <li><img src="images/deal-icon.png" alt=""> 공정거래위원회</li>
+                <li><img src="/images/haccp-icon.png" alt=""> 식품안전인증</li>
+                <div class="sns-icon">
+                    <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="images/facebook.png" alt="facebook"></a>
+                    <a href=""><img src="images/instagram.png" alt="instagram"></a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
